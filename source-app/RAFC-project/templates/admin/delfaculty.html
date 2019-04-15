@@ -1,0 +1,57 @@
+{% extends 'admin/base_admin.html' %}
+{% load static %}
+{% block title %} | Add {% endblock %}
+{% block content %}
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+	<h6 class="m-0 font-weight-bold text-primary">All Facultys</h6>
+  </div>
+  <div class="card-body">
+	<div class="table-responsive">
+        {% if facultys %}
+		<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+		  <thead>
+			<tr>
+            <th>#</th>
+			    <th>Faculty Id</th>
+  			  <th>Name</th>
+  			  <th>Email</th>
+                <th>Department</th>
+                <th>Password</th>
+               <th>Action</th>
+			</tr>
+		  </thead>
+		  <tfoot>
+			<tr>
+                <th>#</th>
+			     <th>Faculty Id</th>
+   			  <th>Name</th>
+   			  <th>Email</th>
+                 <th>Department</th>
+                 <th>Password</th>
+                 <th>Action</th>
+			</tr>
+		  </tfoot>
+		   <tbody>
+{% for faculty in facultys %}
+			 <tr>
+                 <th scope="row">{{forloop.counter}}</th>
+			  <td>{{faculty.f_id}}</td>
+              <td>{{faculty.name}}</td>
+        	  <td>{{faculty.dept}}</td>
+              <td>{{faculty.email}}</td>
+        	  <td>{{faculty.password}}</td>
+    		  <td><a href={% url "delfaculty" fac_id=faculty.pk %} ><span class="fa fa-trash w3-xlarge" ></span></a></td>
+			 </tr>
+             {% endfor %}
+			 </tbody>
+		   </table>
+           {% else %}
+           	<h3>No Facultys Available</h3>
+           {% endif %}
+		 </div>
+	   </div>
+	 </div>
+
+
+{% endblock %}
