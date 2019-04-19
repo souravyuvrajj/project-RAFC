@@ -1,0 +1,392 @@
+{% extends 'student/base_student.html' %}
+{% load static %}
+{% block title %} | Student {% endblock %}
+{% block content %}
+
+  <!-- First Container -->
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="margin">{{course_id}}</h3>
+    <img src="{% static 'img/avatar.png'%}" class="img-responsive img-circle margin" style="display:inline" width="350" height="350">
+     <h3>{{fac_name}}</h3>
+  </div>
+
+  <!-- Third Container (Grid) -->
+  <div class="container-fluid bg-3 text-center">
+
+
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-pencil fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Fill the form</h2>
+      <div class="w3-container">
+        <h5 class="w3-opacity">
+      <b></b></h5>
+      <hr>
+    </div>
+        <form action={% url 'give_feedback' course_id=course_id %} class="w3-container w3-margin" method="post">
+            {% csrf_token %}
+          <div class="w3-container">
+            <h5 class="w3-opacity">
+          <b>A:   About The Course</b></h5>
+          <hr>
+
+          <div class="w3-row">
+          <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>A.1 A detailed course syllabus was provides at the beginning of the course.</h4></div><br>
+          <div class="btn-group btn-group-toggle btn-group-lg w3-left" data-toggle="buttons">
+    <label class="btn btn-secondary">
+        <input name = "o1" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o1" type="radio"  autocomplete="off" value="3" > Disagree
+    </label>
+    <label class="btn btn-secondary active">
+        <input name ="o1" type="radio"  autocomplete="off" value ="5" checked> Neutral
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o1" type="radio"  autocomplete="off" value="8" > Agree
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o1" type="radio"  autocomplete="off" value="10"> Strongly agree
+    </label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+      <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>A.2 Text books were appropriate from the beginning of the course.</h4></div><br>
+      <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+    <label class="btn btn-secondary">
+        <input name = "o2" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o2" type="radio"  autocomplete="off" value="3" > Disagree
+    </label>
+    <label class="btn btn-secondary active">
+        <input name ="o2" type="radio"  autocomplete="off" value ="5" checked> Neutral
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o2" type="radio"  autocomplete="off" value="8" > Agree
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o2" type="radio"  autocomplete="off" value="10"> Strongly agree
+    </label>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left "><h4>A.3 Refrence book provided good support for the course.</h4></div><br>
+      <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+    <label class="btn btn-secondary">
+        <input name = "o3" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o3" type="radio"  autocomplete="off" value="3" > Disagree
+    </label>
+    <label class="btn btn-secondary active">
+        <input name ="o3" type="radio"  autocomplete="off" value ="5" checked> Neutral
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o3" type="radio"  autocomplete="off" value="8" > Agree
+    </label>
+    <label class="btn btn-secondary ">
+        <input name ="o3" type="radio"  autocomplete="off" value="10"> Strongly agree
+    </label>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+    <div class="w3-left"><h4>A.4 The course load was very heavy.</h4></div><br>
+    <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary">
+      <input name = "o4" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+      <input name ="o4" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+      <input name ="o4" type="radio"  autocomplete="off" value ="5" checked > Neutral
+  </label>
+  <label class="btn btn-secondary ">
+      <input name ="o4" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+      <input name ="o4" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+    <div class="w3-left"><h4>A.5 The course load was highly enjoyable.</h4></div><br>
+    <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary">
+      <input name = "o5" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+      <input name ="o5" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+      <input name ="o5" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+      <input name ="o5" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+      <input name ="o5" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+        </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5 class="w3-opacity">
+  <b>B:   About The Teaching</b></h5>
+  <hr>
+  <div class="w3-row">
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.1 Overall, the instructor was excellent.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary">
+    <input name = "o6" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o6" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o6" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o6" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o6" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.2 The instructor was well prepared for the class.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary  ">
+    <input name = "o7" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o7" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o7" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o7" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o7" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.3 The concept was explained properly.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary  ">
+    <input name = "o8" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o8" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o8" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o8" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o8" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.4 Classes were held regularly as per time-table.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary   ">
+    <input name = "o9" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o9" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o9" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o9" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o9" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.5 The Instructor's voice was audible and understandable.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary  ">
+    <input name = "o10" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o10" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o10" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o10" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o10" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.6 Black-board work/visual presentations were of good quality.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary   ">
+    <input name = "o11" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o11" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o11" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o11" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o11" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div></div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.7 Topics were covered in logical sequence.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary   ">
+    <input name = "o12" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o12" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o12" type="radio"  autocomplete="off" value ="5"checked > Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o12" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o12" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.8 The coverage of course was complete.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary  ">
+    <input name = "o13" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o13" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o13" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o13" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o13" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.9 Questions and discussions were encouraged.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary ">
+    <input name = "o14" type="radio"  autocomplete="off" value ="1"> Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o14" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o14" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o14" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o14" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container w3-left">
+  <div class="w3-left"><h4>B.10 Evaluation was done regularly & academic advices were given.</h4></div><br>
+  <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+  <label class="btn btn-secondary  ">
+    <input name = "o15" type="radio"  autocomplete="off" value ="1" > Strongly disagree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o15" type="radio"  autocomplete="off" value="3" > Disagree
+  </label>
+  <label class="btn btn-secondary active">
+    <input name ="o15" type="radio"  autocomplete="off" value ="5" checked> Neutral
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o15" type="radio"  autocomplete="off" value="8" > Agree
+  </label>
+  <label class="btn btn-secondary ">
+    <input name ="o15" type="radio"  autocomplete="off" value="10"> Strongly agree
+  </label>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class ="w3-container">
+  <div class="w3-left-align w3-wide" ><h4>comment:(Required)</h4>
+    <p>Mention strong and weak points of the course/instructor. Any other detailed comments are welcome.Also mention suggestions,if any,to improve the course and it's teaching methodology so that the course will be more useful and enjoyable</p>
+  </div>
+  <textarea id="comment"  name="comment" placeholder="Write something.."></textarea>
+  </div>
+  </div>
+  <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit" name="action" value="submit">submit
+  </button>
+  </div>
+        </form>
+    </div>
+{% endblock %}

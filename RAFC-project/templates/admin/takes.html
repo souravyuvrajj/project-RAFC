@@ -1,0 +1,84 @@
+{% extends 'admin/base_admin.html' %}
+{% load static %}
+{% block content %}
+			<form action="{% url 'takes' %}" method="POST">
+				{% csrf_token %}
+				<span class="login100-form-title p-b-43">
+					Edit Takes
+				</span>
+
+                <div class="wrap-input100">
+					<input class="input100" name="sem" type="number" >
+					<span class="focus-input100"></span>
+					<span class="label-input100">Semester.</span>
+				</div>
+
+				<div class="wrap-input100">
+					<input class="input100" name="r_id" type="number" >
+					<span class="focus-input100"></span>
+					<span class="label-input100">Roll No.</span>
+				</div>
+
+
+				<div class="wrap-input100">
+					<input class="input100" name="c_id" type="text" >
+					<span class="focus-input100"></span>
+					<span class="label-input100">Course Id</span>
+				</div>
+
+				<div class="container-login100-form-btn">
+					<button class="login100-form-btn" type="submit" name="action" value="submit">
+						ADD
+					</button>
+				</div>
+
+			</form>
+<hr class=" d-none d-md-block">
+<!-- Table  -->
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+	<h6 class="m-0 font-weight-bold text-primary">Takes:</h6>
+  </div>
+  <div class="card-body">
+	<div class="table-responsive">
+		{% if takes %}
+		<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+		  <thead>
+			<tr>
+				<th>#</th>
+			   <th>Semister</th>
+			  <th>Roll No.</th>
+              <th>Course Id</th>
+              <th>Action</th>
+			</tr>
+		  </thead>
+		  <tfoot>
+			<tr>
+				<th>#</th>
+            <th>Semister</th>
+			  <th>Roll No.</th>
+              <th>Course Id</th>
+              <th>Action</th>
+			</tr>
+		  </tfoot>
+		   <tbody>
+			   {% for take in takes %}
+			 <tr>
+				 <th scope="row">{{forloop.counter}}</th>
+              <td>{{take.semester}}</td>
+			  <td>{{take.roll_no.roll_no}}</td>
+              <td>{{take.course_id.title}}</td>
+              <td><a href={% url "takesdlt" student_id=take.roll_no.roll_no course_id=take.course_id.course_id sem=take.semester%} ><span class="fa fa-trash w3-xlarge" ></span></a></td>
+			 </tr>
+			 {% endfor %}
+			 </tbody>
+		   </table>
+		   {% else %}
+		   <h3>Nothing Available</h3>
+		   {% endif %}
+		 </div>
+	   </div>
+	 </div>
+
+
+{% endblock %}

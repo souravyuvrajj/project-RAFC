@@ -1,0 +1,71 @@
+{% extends 'faculty/base_faculty.html' %}
+{% load static %}
+{% block title %} | Faculty {% endblock %}
+{% block content %}
+
+<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm pull-right" data-toggle="modal" data-target="#datamodel"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+  <h1 class="h3 mb-0 text-gray-800">{{title}}</h1>
+</div>
+
+<div class="col-xl-10 col-lg-10">
+
+  <!-- Bar Chart -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Average Feedback Report</h6>
+    </div>
+    <div class="card-body">
+      <div class="chart-bar">
+        <canvas id="myBarChart"></canvas>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="col-xl-10 col-lg-10">
+
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Index</h6>
+    </div>
+    <div class="card-body">
+      A1. A detailed course syllabus was provided at the beginning of the course.
+      <hr>
+      A2. Text books were appropiate for the course.
+      <hr>
+      A3. Reference books provided good support for the course.
+      <hr>
+      A4. The course load was very heavy.
+      <hr>
+      A5. The course was highly enjoyable.
+      <hr>
+      B1. Overall, the instructor was excellent.
+      <hr>
+      B2. The instructor was well prepared for the class.
+      <hr>
+      B3. The concepts were explained properly.
+      <hr>
+      B4. Classes were held regularly as per time-table.
+      <hr>
+      B5. The instructor's voice was audible and understandable.
+      <hr>
+      B6. Black-board work/visual presentations were of good quality.
+      <hr>
+      B7. Topics were covered in a logical sequence.
+      <hr>
+      B8. The coverage of the course was complete
+      <hr>
+      B9. Questions and discussions were encouraged.
+      <hr>
+      B10. Evaluation was done regularly & academic advices were given.
+      <hr>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

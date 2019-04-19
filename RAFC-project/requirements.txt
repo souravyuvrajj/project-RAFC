@@ -1,0 +1,8 @@
+django-2.2
+psycopg2-binary-2.8.2
+postgress(postgres password = fairytail)
+#steps
+1)\password postgres
+2)CREATE DATABASE rafc;
+
+python manage.py createsuperuser(flash,pass=fairytail)

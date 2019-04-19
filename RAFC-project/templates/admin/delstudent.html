@@ -1,0 +1,56 @@
+{% extends 'admin/base_admin.html' %}
+{% load static %}
+{% block content %}
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+	<h6 class="m-0 font-weight-bold text-primary">All Students</h6>
+  </div>
+  <div class="card-body">
+	<div class="table-responsive">
+        {% if students %}
+		<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+		  <thead>
+			<tr>
+            <th>#</th>
+			   <th>Roll_No</th>
+ 			  <th>Name</th>
+ 			  <th>Email</th>
+               <th>Department</th>
+               <th>Password</th>
+               <th>Action</th>
+			</tr>
+		  </thead>
+		  <tfoot>
+			<tr>
+                <th>#</th>
+			    <th>Roll_No</th>
+  			  <th>Name</th>
+  			  <th>Email</th>
+                <th>Department</th>
+                <th>Password</th>
+                 <th>Action</th>
+			</tr>
+		  </tfoot>
+		   <tbody>
+{% for student in students %}
+			 <tr>
+                 <th scope="row">{{forloop.counter}}</th>
+			   <td>{{student.roll_no}}</td>
+               <td>{{student.name}}</td>
+               <td>{{student.email}}</td>
+               <td>{{student.dept}}</td>
+               <td>{{student.password}}</td>
+    		  <td><a href={% url "delstudent" student_id=student.pk %} ><span class="fa fa-trash w3-xlarge" ></span></a></td>
+			 </tr>
+             {% endfor %}
+			 </tbody>
+		   </table>
+           {% else %}
+           	<h3>No Students Available</h3>
+           {% endif %}
+		 </div>
+	   </div>
+	 </div>
+
+
+{% endblock %}
