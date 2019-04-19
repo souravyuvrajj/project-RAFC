@@ -1,0 +1,80 @@
+1555691800634	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1f/zcjt_fc17gddyf9ld7yyb97h0000gn/T/rust_mozprofile.8ZDWEEM7xQQa"
+1555691803913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555691803915	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555691803916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555691811988	Marionette	INFO	Listening on port 52650
+1555691812076	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:52630/static/vendor/animsition/js/animsition.min.js, line 8: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/vendor/bootstrap/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.
+JavaScript error: http://localhost:52630/static/vendor/select2/select2.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/vendor/daterangepicker/daterangepicker.js, line 1616: TypeError: $ is undefined
+JavaScript error: http://localhost:52630/static/vendor/countdowntime/countdowntime.js, line 45: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/js/main.js, line 73: ReferenceError: jQuery is not defined
+1555691825350	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1f/zcjt_fc17gddyf9ld7yyb97h0000gn/T/rust_mozprofile.WcsYvvKnFM3l"
+1555691827935	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555691827937	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555691827937	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555691835052	Marionette	INFO	Listening on port 52806
+1555691835109	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:52630/static/vendor/animsition/js/animsition.min.js, line 8: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/vendor/bootstrap/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.
+JavaScript error: http://localhost:52630/static/vendor/select2/select2.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/vendor/daterangepicker/daterangepicker.js, line 1616: TypeError: $ is undefined
+JavaScript error: http://localhost:52630/static/vendor/countdowntime/countdowntime.js, line 45: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/js/main.js, line 73: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/faculty, line 254: SyntaxError: expected expression, got ','
+1555691848597	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1f/zcjt_fc17gddyf9ld7yyb97h0000gn/T/rust_mozprofile.lAzjB89Pb0IQ"
+1555691852410	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555691852412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555691852413	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555691860067	Marionette	INFO	Listening on port 52950
+1555691860203	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:52630/static/vendor/animsition/js/animsition.min.js, line 8: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/vendor/bootstrap/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.
+JavaScript error: http://localhost:52630/static/vendor/select2/select2.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/vendor/daterangepicker/daterangepicker.js, line 1616: TypeError: $ is undefined
+JavaScript error: http://localhost:52630/static/vendor/countdowntime/countdowntime.js, line 45: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:52630/static/js/main.js, line 73: ReferenceError: jQuery is not defined
+1555691887203	Marionette	INFO	Stopped listening on port 52950
+1555691889804	Marionette	INFO	Stopped listening on port 52806
+1555691892576	Marionette	INFO	Stopped listening on port 52650
+1555693284808	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1f/zcjt_fc17gddyf9ld7yyb97h0000gn/T/rust_mozprofile.5GEWNworTe7n"
+1555693287412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555693287414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555693287414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555693294569	Marionette	INFO	Listening on port 53528
+1555693294669	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:53515/static/vendor/animsition/js/animsition.min.js, line 8: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:53515/static/vendor/bootstrap/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.
+JavaScript error: http://localhost:53515/static/vendor/select2/select2.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:53515/static/vendor/daterangepicker/daterangepicker.js, line 1616: TypeError: $ is undefined
+JavaScript error: http://localhost:53515/static/vendor/countdowntime/countdowntime.js, line 45: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:53515/static/js/main.js, line 73: ReferenceError: jQuery is not defined
+1555693306901	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1f/zcjt_fc17gddyf9ld7yyb97h0000gn/T/rust_mozprofile.O97o3pNbJpAy"
+1555693309355	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555693309356	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555693309357	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555693315042	Marionette	INFO	Listening on port 53678
+1555693315175	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://localhost:53515/static/vendor/animsition/js/animsition.min.js, line 8: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:53515/static/vendor/bootstrap/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.
+JavaScript error: http://localhost:53515/static/vendor/select2/select2.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:53515/static/vendor/daterangepicker/daterangepicker.js, line 1616: TypeError: $ is undefined
+JavaScript error: http://localhost:53515/static/vendor/countdowntime/countdowntime.js, line 45: ReferenceError: jQuery is not defined
+JavaScript error: http://localhost:53515/static/js/main.js, line 73: ReferenceError: jQuery is not defined
+1555693328898	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1f/zcjt_fc17gddyf9ld7yyb97h0000gn/T/rust_mozprofile.hva9NTKS3Uhg"
+1555693331179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555693331180	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555693331181	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555693341321	Marionette	INFO	Listening on port 53833
+1555693341420	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.get@chrome://marionette/content/driver.js:1087:3
+
+1555693344576	Marionette	ERROR	[6442450945] No reply from Marionette:Register
+JavaScript error: chrome://marionette/content/listener.js, line 459: TypeError: reply[0] is undefined
+1555693346844	Marionette	ERROR	[8589934593] No reply from Marionette:Register
+JavaScript error: chrome://marionette/content/listener.js, line 459: TypeError: reply[0] is undefined
+1555693365043	Marionette	INFO	Stopped listening on port 53528
+1555693369948	Marionette	INFO	Stopped listening on port 53678
+1555693375614	Marionette	INFO	Stopped listening on port 53833

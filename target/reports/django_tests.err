@@ -1,0 +1,56 @@
+Creating test database for alias 'default'...
+/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Attendance.date received a naive datetime (2019-04-19 17:00:52.594627) while time zone support is active.
+  RuntimeWarning)
+................................----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 53767)
+Traceback (most recent call last):
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+EE
+======================================================================
+ERROR: test_faculty_login (feedback.functional_tests.test_project.MySeleniumTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sourabhsingh/Desktop/SE project/src/main/python/Project_RAFC/feedback/functional_tests/test_project.py", line 28, in test_faculty_login
+    self.assertTrue(self.browser.current_url, self.live_server_url +"/faculty")
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 669, in current_url
+    return self.execute(Command.GET_CURRENT_URL)['value']
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: Browsing context has been discarded
+
+
+======================================================================
+ERROR: test_student_login (feedback.functional_tests.test_project.MySeleniumTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sourabhsingh/Desktop/SE project/src/main/python/Project_RAFC/feedback/functional_tests/test_project.py", line 45, in test_student_login
+    self.browser.get(self.live_server_url)
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/sourabhsingh/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: TypeError: this.curBrowser.contentBrowser is null
+
+
+----------------------------------------------------------------------
+Ran 34 tests in 91.108s
+
+FAILED (errors=2)
+Destroying test database for alias 'default'...
