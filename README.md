@@ -12,6 +12,7 @@ pyb django_runserver
 
 [Optional]
 cd project-RAFC/src/main/python/RAFC-project
+
 python3 manage.py runserver
 
 Go to http://127.0.0.1:8080/
